@@ -13,6 +13,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="java/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="java/java.js"></script>
     <title>Education Project</title>
 </head>
@@ -20,37 +21,29 @@
     <!---Header Section Start-->
     <section id="header">
      <div id="menu"><i class="fa fa-bars"></i></div>
-     <a href="#" class="logo"><i class="fa fa-graduate">Teachable</i></a>
+     <a href="#" class="logo"><i class="fa fa-graduation-cap"></i>Teachable</i></a>
      <nav class="navbar">
          <ul>
-             <li><a class="" href="#home">home</a></li>
+             <li><a href="#home">home</a></li>
              <li><a href="#course">courses</a></li>
-             <li><a href="#home">teachers</a></li>
-             <li><a href="#home">about us</a></li>
-             <li><a href="#home">testimonials</a></li>
+             <li><a href="#about">about us</a></li>
+             <li><a href="#teachers">teachers</a></li>
+             <li><a href="#testimonial">testimonials</a></li>
          </ul>
      </nav>
      <div id="login"><i class="fa fa-user"></i></div>
     </section>
     <!--End of Header-->
-
+      
     <!--Start Log In Section-->
-    <section>
-    <div id="login-form" class="login-page">
+    <div id="login-form"  class="login-page">
         <div class="form-box">
             <div class="button-box">
-                <div class="btn"> 
-                <button type="button" onclick="loginTeacher()" id="active" class="toggle-btn1 login-btn btn-color">Student</button>
-                <button type="button" onclick="loginStudent()" class="toggle-btn2 login-btn">Teacher</button>
+                <div id="btn"> </div>
+                <button type="button" onclick="loginStudent()" class="toggle-btn">Teacher</button>
+                <button type="button" onclick="loginTeacher()" class="toggle-btn">Student</button>
+           
             </div>
-            </div>
-            <!-- Creat Form As A Teacher-->
-            <form id="login-teacher" class="input-teacher-login">
-                <input type="text" class="input-field" placeholder="Email Id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log in</button>
-            </form>
              <!--Creat Form As A student-->
              <form id="login-student" class="input-student-login">
                 <input type="text" class="input-field" placeholder="First Name" required>
@@ -60,16 +53,29 @@
                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
+                    <!-- Creat Form As A Teacher-->
+                    <form id="login-teacher" class="input-teacher-login">
+                        <input type="text" class="input-field" placeholder="Email Id" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
         </div>
     </div>
-</section>
 
     <!---Start Home Section-->
-    <section id="home" class="home">
-       <h1>Learn in <span> Home</span></h1>
-       
-       <a href="#"><button class="start">Enroll Now</button></a>
-       <div class="shape"></div>
+    <section id="home">
+      <div class="home">
+          <div class="home-container">
+          <div class="home-content">
+              <span>Teachable</span>
+              <h1>LEARN IN HOME</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aperiam perferendis harum commodi provident debitis qui non ut culpa corporis, voluptatem error repellat officia nulla quo animi? Quam, minus ut?</p>
+            <a href="#" class="btn-one">Discover Teacher</a>
+            <a href="#" class="btn-two">Discover Student</a>  
+            </div>
+          </div>
+      </div>
     </section>
 
 
@@ -133,327 +139,10 @@
 
      </div>
     </section>
+<!--END COURSES-->
 
-
-
-         <!--start teacers-->
-         <div class="main-container">
-            <header id="filter">
-         <h1>the teachers</h1>
-                 <ul>
-                         <li class="active">All</li>
-                         <li>Programming</li>
-                         <li>Math</li>
-                         <li>Markiting</li>
-                         <li>Business</li>
-                         <li>English</li>
-                 </ul>
-             </header>
-             
-           
-                 <div class="filter-container">
-                     <div class="teacher-section">
-                         <div class="container">
-             <div class="row">
-                 <div class="team-items">
-                     <div class="item" data-filter="english">
-                         <img src="images/t7.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="programming">
-                         <img src="images/t20.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="math">
-                         <img src="images/t19.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="english">
-                         <img src="images/t12.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="programming">
-                         <img src="images/t18.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="math">
-                         <img src="images/t11.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="markiting">
-                         <img src="images/t13.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-     
-                     <div class="item" data-filter="business">
-                         <img src="images/t17.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="programming">
-                         <img src="images/t14.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="math">
-                         <img src="images/t16.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="programming">
-                         <img src="images/t15.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-     
-                     <div class="item" data-filter="english">
-                         <img src="images/t10.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="math">
-                         <img src="images/t9.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="business">
-                         <img src="images/t8.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="business">
-                         <img src="images/t1.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="english">
-                         <img src="images/t3.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="markiting">
-                         <img src="images/t5.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="markiting">
-                         <img src="images/t2.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="markiting">
-                         <img src="images/t6.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="item" data-filter="business">
-                         <img src="images/t34.png">
-                         <div class="inner">
-                         <div class="info">
-                             <h5>sarah lowi</h5>
-                             <p>designer</p>
-                             <div class="social-link">
-                                 <a href=""><span class="fa fa-linkedin"></span></a>
-                                 <a href=""><span class="fa fa-comment"></span></a>
-                                 <a href=""><span class="fa fa-user"></span></a>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                     
-     
-             
-     
-     
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-          
-            
-
-   <!--Start About-->
-   <section id="about" class="bg-light">
+ <!--Start About-->
+ <section id="about" class="bg-light">
     <div class="container1">
         <h2 class="m-heading text-center">every new day is another chance to<span class="text-primary"> improve your skills...</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet fugiat earum facere minima ipsa maiores id animi obcaecati!</p>
@@ -465,6 +154,101 @@
 </div>
 </section>
 <!--End About-->
+
+
+         <!--start teacers-->
+         <section id="teachers">
+             <h1 class="heading">our top teacher</h1>
+         <div class="teacher">
+             <div class="card-teacher">
+                <div class="img">
+                 <img src="images/te1.jpg">
+                 </div>
+                 <h2>Jane Doe</h2>
+                 <p class="title-teacher">programmer</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                 <div class="social-link">
+                    <a href=""><span class="fa fa-linkedin"></span></a>
+                    <a href=""><span class="fa fa-comment"></span></a>
+                    <a href=""><span class="fa fa-user"></span></a>
+                </div>
+                </div>
+         <!--card-->
+            <div class="card-teacher">
+                <div class="img">
+                <img src="images/te2.jpg">
+                </div>
+                <h2>Jane Doe</h2>
+                <p class="title-teacher">programmer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                <div class="social-link">
+                    <a href=""><span class="fa fa-linkedin"></span></a>
+                    <a href=""><span class="fa fa-comment"></span></a>
+                    <a href=""><span class="fa fa-user"></span></a>
+                </div>
+            </div>
+     
+                 <!--card-->
+                    <div class="card-teacher">
+                        <div class="img">
+                        <img src="images/te4.png">
+                        </div>
+                        <h2>Jane Doe</h2>
+                        <p class="title-teacher">programmer</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                        <div class="social-link">
+                            <a href=""><span class="fa fa-linkedin"></span></a>
+                            <a href=""><span class="fa fa-comment"></span></a>
+                            <a href=""><span class="fa fa-user"></span></a>
+                        </div>
+                    </div>
+                </div>
+                         <!--PART2 OUR TEACHERS-->
+                         <div class="teacher">
+                            <div class="card-teacher">
+                                <div class="img">
+                                <img src="images/te6.jpg">
+                                </div>
+                                <h2>Jane Doe</h2>
+                                <p class="title-teacher">programmer</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                                <div class="social-link">
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-comment"></span></a>
+                                    <a href=""><span class="fa fa-user"></span></a>
+                                </div>
+                            </div>
+                        <!--card-->
+                           <div class="card-teacher">
+                               <div class="img">
+                               <img src="images/te7.webp">
+                               </div>
+                               <h2>Jane Doe</h2>
+                               <p class="title-teacher">programmer</p>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                               <div class="social-link">
+                                <a href=""><span class="fa fa-linkedin"></span></a>
+                                <a href=""><span class="fa fa-comment"></span></a>
+                                <a href=""><span class="fa fa-user"></span></a>
+                            </div>
+                            </div>
+                    
+                                <!--card-->
+                                   <div class="card-teacher">
+                                    <div class="img">
+                                       <img src="images/t3.webp">
+                                       </div>
+                                       <h2>Jane Doe</h2>
+                                       <p class="title-teacher">programmer</p>
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod excepturi quaerat quia natus, expedita doloribus sit neque sapiente, dicta culpa odio laboriosam.</p>
+                                   <div class="social-link">
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-comment"></span></a>
+                                    <a href=""><span class="fa fa-user"></span></a>
+                                    </div>
+                                </div>
+                               </div>
+        </section>
 
 
 <!-- START TESTEMONIAL  -->
@@ -585,65 +369,21 @@
     
     </footer>
 
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          delay:300
-      });
-    </script>
-<script>
-
-
-var x=document.getElementById('login-teacher');
+     var x=document.getElementById('login-teacher');
 var y=document.getElementById("login-student");
 var z=document.getElementById("btn");
 function loginTeacher() {
     x.style.left='-400px';
     y.style.left='50px';
-    z.style.left-'110px'
+    z.style.left='110px'
 }
 function loginStudent(){
     x.style.left='50px';
     y.style.left='460px';
-    z.style.left-'0px'
+    z.style.left='0';
 }
-const liItem = document.querySelectorAll('.btn .login-btn');
-     liItem.forEach(login => {
-        login.addEventListener('click',()=>{
-        //active
-        liItem.forEach(login => {
-            login.IdName="active";
-            
-        });
-        login.IdName="";
-    });
-    //
- const liItem = document.querySelectorAll('ul li');
-  const section = document.querySelectorAll('.item');
-     liItem.forEach(item => {
-      item.addEventListener('click',()=>{
-        //active
-        liItem.forEach(item => {
-            item.className="";
-            
-        });
-        item.className="active";
- 
-    //filter
-    const values = item.textContent;
-    section.forEach(show => {
-        show.style.display = 'none';
-        if (show.getAttribute("data-filter") == values.toLowerCase()  || values == "All") {
-            show.style.display="block";
-        }
-});
-});
-     
-     });
-     
-    });
-</script>
+    </script>
 
 </body>
 </html>
