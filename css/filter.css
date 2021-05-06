@@ -1,6 +1,6 @@
 body {
     font-family:sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    background-color: #f7f0f0;
+   
 	
 }
 h1{
@@ -10,6 +10,9 @@ h1{
     text-align: left;
     text-align: center;
     text-transform: capitalize;
+}
+h1 span{
+    color: #c9756a;
 }
 .row
 {
@@ -38,6 +41,7 @@ h1{
 		width: 47px;
 		font-size: 29px;
 		border: none;
+        background-color: #fff;
 
 	}
 #search-form .form-control {
@@ -57,10 +61,9 @@ h1{
     width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 2px solid rgb(221, 145, 145);
+	border: 2px solid #403953;
 }
 .product-inner{
-	width: 270px;
    height:300px;
    border-radius: 20px;
    box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -69,7 +72,7 @@ h1{
 .teacher {
 	width: 23%;
 	margin: 20px 10px;
-	box-shadow: 3px 3px 10px 3px rgb(221, 145, 145);
+	box-shadow: 3px 3px 10px 3px #403953;
 	border-radius: 20px;
 	height: 320px;
 
