@@ -112,7 +112,7 @@ img
 }
 .received-msg-inbox p
 {
-    background: #efefef none repeat scroll 0 0;
+    background: #ccc;
     border-radius: 10px;
     color: #646464;
     font-size: 14px;
@@ -183,8 +183,9 @@ width: 100px;
 {
     position: relative;
     height: 97px ;
-    background-color: rgb(250, 243, 243);
+    background-color: #ccc;
     width: 700px;
+    padding-bottom: 20px;
 }
 .input-group {
     float: right;
@@ -205,9 +206,10 @@ width: 100px;
     background: transparent !important;
     border: none !important;
     position: absolute;
-    right: 136px;
-    bottom: 12px;
-    font-size: 23px;
+    right: 127px;
+    bottom: 27px;
+    font-size: 27px;
+    color: #333
 }
 .bottom-icons {
     padding: 6px 15px;

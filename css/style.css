@@ -745,7 +745,8 @@ footer{
         top: -120%;
         left: 0;
         width: 100%;
-        background: #444;
+        background: #403953;
+        opacity: .8;
     }
     #header .navbar ul{
         flex-flow: column;
@@ -762,7 +763,7 @@ footer{
         color: #fff;
     }
     #header .navbar ul li a:hover{
-        color: #f39c12;
+        color: #c9756a;
     }
   
     #header .nav-toggle{
@@ -778,6 +779,9 @@ footer{
    width: auto;
    padding: 30px;
 
+}
+.home p{
+    display: none;
 }
 /*  our teacher  */
 .teacher-section .team-items .item{
