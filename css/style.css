@@ -779,8 +779,7 @@ footer{
 
 /* home  */
 .home{
-    background-size: cover;
-    background-position: center;
+    background: url(../images/s1.jpg) no-repeat center;
 }
     .home h1{
         font-size: 3rem;
@@ -860,7 +859,7 @@ footer{
 }
 /*footer*/
 .footer-distributed .footer-left {
-100%
+
 }
 .footer-distributed h3 {
     font: normal 26px 'Cookie', cursive;
