@@ -1,8 +1,11 @@
 :root{
-    --color: #5f547e;
+    --color: #443b5a;
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@media only screen and (min-width: 768px) {
+    width: 100%;
+}
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +13,7 @@
 }
 
 body{
-    background: #cbc9ce;
+    background: #e0dfe2;
     padding-top: 5px;
     font-family: "poppins", sans-serif;
     margin: 20px 20px;
@@ -38,7 +41,7 @@ body{
     left: 50px;
     top: 10px;
     z-index: 5;
-    background: #fff;
+    background: #b7b5b9;
 }
 .profile_nav_info{
     float: left;
@@ -111,6 +114,8 @@ body{
     width: 100%;
     display: flex;
     padding-right: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .2);
+    background: whitesmoke;
 }
 .profile_side{
     width: 300px;
@@ -125,7 +130,7 @@ body{
 .profile_side p{
     margin-bottom: 7px;
     color: #333;
-    font-size: 14px;
+    font-size: 18px;
 }
 .profile_side p i{
     color: var(--color);
@@ -136,7 +141,7 @@ body{
 }
 .profile_btn{
     display: flex;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 button.chatbtn{
     border: 0;
@@ -155,7 +160,7 @@ button.chatbtn{
     color: #fff;
 }
 button.chatbtn:hover{
-    background: rgba(163, 133, 172, 0.9)
+    background: #8a8494;
 }
 button.chatbtn i{
     margin-right: 8px;
@@ -168,11 +173,11 @@ button.chatbtn i{
 .user_bio h3{
     text-align: center;
     color: #333;
-    padding-top: 40px;
+    padding-top: 15px;
 }
-.user_bio p {
-    text-align:center;
-    padding-top: 20px;
+.profile_side span{
+    padding-top: 10px;
+    text-align: center;
 }
 .user_rating h3{
     font-size: 2.5rem;
@@ -203,8 +208,9 @@ button.chatbtn i{
     display: flex;
     justify-content: center;
     height: 40px;
-    background: #fff;
-    box-shadow: 0px 2px 5px #a7a4ad;
+    background: #e0dfe2;
+    box-shadow: 0px 2px 5px #5b595f;
+    width: 100%;
 }
 .nav ul li{
     padding: 10px;
@@ -213,6 +219,7 @@ button.chatbtn i{
     text-align: center;
     transition: all .2s ease-in-out;
     color: #333;
+    border: solid 1px #b7b5b9;
 }
 .nav ul li.active,
 .nav ul li:hover {
@@ -262,7 +269,7 @@ button.chatbtn i{
     background: rgba(37, 30, 54, .2);
 }
 .tab ul li span:nth-child(1){
-    width: 30px;
+    width: 40px;
 }
 .tab ul li span:nth-child(2){
     width: 1000px;
