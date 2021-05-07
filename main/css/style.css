@@ -204,6 +204,12 @@ body{
     font-size: 15;
     left: 450px;
 }
+#login-student a{
+    color: #fff;
+}
+#login-teacher a{
+    color: #fff;
+}
 
 
 /*        Strat Home Styling    */
@@ -772,8 +778,17 @@ footer{
     }
 
 /* home  */
+.home{
+    background-size: cover;
+    background-position: center;
+}
     .home h1{
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    .home-content {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
     }
 .home h3{
    width: auto;
@@ -783,11 +798,85 @@ footer{
 .home p{
     display: none;
 }
-/*  our teacher  */
-.teacher-section .team-items .item{
+.home-content span {
+    font-size: 24px;
+}
+.home-content .btn-one,
+.home-content .btn-two{
+    width: 143px;
+    margin-left: -1px;
+    margin: 3px;
+    font-size: 12px;
+}
+/*  responsive log in   */
+.form-box {
+    width: 310px;
+    margin: 10% auto;
+}
+.submit-btn {
+    width: 74%
+}
 
-    height: 100px;
-    margin: 90px;
+/*  ABOUT RESPONSIVE  */
+#about{
+    flex-direction: column;
+}
+
+#about .container1 {
+    flex: 1;
+    width: 284px;
+    margin: 10px auto 10px auto;
+}
+#about .container1 p {
+    font-size: 13px;}
+    
+    #about .about-content {
+        width: 323px;
+        margin: auto;
+    }
+/*  our teacher  */
+#teachers  .teacher{
+    flex-direction: column;
+
+}
+#teachers .card-teacher {
+    width: 90%;
+    margin: 10px;
+}
+#teachers .card-teacher .img {
+    width: 159px;
+    height: 168px;
+}
+#teachers .card-teacher h2 {
+    font-size: 18px;
+}
+#teachers .card-teacher p {
+   
+    font-size: 13px;
+}
+/*  RESPONSIVE TESTEMONIAL  */
+.box-container2 .box img {
+    left: -23%;
+}
+/*footer*/
+.footer-distributed .footer-left {
+100%
+}
+.footer-distributed h3 {
+    font: normal 26px 'Cookie', cursive;
+}
+.footer-distributed {
+    font: normal 11px sans-serif
+}
+.footer-distributed .footer-company-name {
+
+    font-size: 15px;
+}
+.footer-distributed .footer-center {
+    display: none;
+}
+.footer-distributed .footer-right{
+    display: none;
 }
 
 }

@@ -90,5 +90,27 @@ height: 20px;
 
 
 
-
+/* stat responsive   */
+@media (max-width:768px){
+	h1{
+		font-size: 2rem;
+	}
+	#filter form {
+		
+		flex-direction: column;
+	}
+	#search-form .form-control1 {
+		width: 265px;
+	}
+	.row .form-group .btn {
+		top: -73px;
+		right: -51px;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.teacher {
+		width: 90%
+	}
+}
 

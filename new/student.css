@@ -8,7 +8,7 @@
     letter-spacing: 0.5px;
    position: relative;
    width: 600px;
-   background: linear-gradient(to right, #f8f2f2 0%, #e5e1f0 100%);
+   background:#fff
 }
 
 img
@@ -20,7 +20,7 @@ img
 {
     border: 1px solid #ccc;
     width: 100%;
-    height: 10%;
+    height: 15%;
     border-bottom: none;
     display: inline-block;
     background-color: #403953;
@@ -110,29 +110,25 @@ img
     width: 50px;
    
 }
-.received-msg-inbox p
-{
+.received-msg-inbox p {
     background: #ccc;
     border-radius: 10px;
     color: #646464;
     font-size: 14px;
-    margin: -0px;
-        margin-left: 0px;
-    padding: 10px 6px 30px 10px;
+    margin: -8px;
+    margin-left: -12px;
+    margin-left: 0px;
+    padding: 10px 6px 24px 10px;
     width: 200px;
     height: 24px;
-    margin-left: 10px;
+    margin-left: 42px;
 }
-.time
-{
+.time {
     color: #777;
     display: block;
     font-size: 12px;
-    margin: 5px 66px 9px 65px;
+    margin: 16px 66px 9px 65px;
     width: 200px;
-   
-   
-    
 }
 .outgoing-chats
 {
@@ -140,13 +136,12 @@ img
     
 
 }
-.outgoing-msg-inbox
-{
-  position: relative;
-left: 150px;
-margin: 85px 0px 85px 58px;
-top: 180px;
-width: 100px;
+.outgoing-msg-inbox {
+    position: relative;
+    left: 113px;
+    margin: 0px 0px 3px 58px;
+    top: 90px;
+    width: 100px;
 }
 .outgoing-chats-msg p
 {
@@ -229,9 +224,60 @@ width: 100px;
     padding: 10px 6px 20px 10px;
     width: 200px;
     height: 24px;
-    margin-left: 60px
+    margin-left: 57px;
 }
 .last
 {
     padding-bottom: 30px;
+}
+
+
+/* stat responsive   */
+@media (max-width:768px){
+
+.msg-header {
+    width: 53%;
+    margin: auto;
+}
+.chats {
+    padding: 22px 0px 0 5px;
+}
+.received-chats-img {
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+}
+.received-msg-inbox p{
+width: 157px;
+height: 19px;
+}
+.time{
+    margin: 24px 66px 23px 65px;
+}
+.outgoing-chats {
+    margin: 22px 20px;
+}
+.outgoing-msg-inbox {
+    left: -45px;
+}
+.bottom-icons {
+    padding: 5px 5px;
+    font-size: 15px;
+}
+.input-group {
+    float: left;
+    margin-top: 13px;
+    margin-right: 81px;
+    outline: none !important;
+    border-radius: 20px;
+    width: 317px !important;
+}
+.input-group-text {
+    background: transparent !important;
+    border: none !important;
+    position: absolute;
+    right: 395px;
+    bottom: 41px;
+    font-size: 22px;
+    }
 }

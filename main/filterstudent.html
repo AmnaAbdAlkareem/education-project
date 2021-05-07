@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="java/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="java/filterstudent.js"></script>
+    <title>Education Project</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <div class="container">
+        <h1>choose your <span>students</span></h1>
+        <div class="row" id="filter">
+            <form>
+                <div class="form-group">
+                    <select data-filter="location" class="filter-location filter form-control">
+                        <option value="" aria-placeholder="select location">Select Location</option>
+                        <option value="">Show All</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select data-filter="course" class="filter-course filter form-control">
+                        <option value="" aria-placeholder="select course">Select Course</option>
+                        <option value="">Show All</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select data-filter="gender" class="filter-gender filter form-control">
+                        <option value="">Select Gender</option>
+                        <option value="">Show All</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select data-filter="name" class="filter-name filter form-control">
+                        <option value="">Select the name</option>
+                        <option value="">Show All</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="row" id="search">
+            <form id="search-form" action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                   
+                    <input class="form-control1" type="text" placeholder="Search" />
+                </div>
+                <div class="form-group col-xs-3">
+                    <button type="submit" class="btn btn-block btn-primary"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="row" id="teachers">
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
