@@ -349,7 +349,6 @@ body{
 .box .add-list {
     background-color: #c9756a;
     border-radius: 19px;
-    margin-left: 0px;
     z-index: 1000;
     display: none;
     width: 103px;
@@ -837,7 +836,10 @@ footer{
 .submit-btn {
     width: 74%
 }
-
+/*  courses RESPONSIVE  */
+.box .add-list {
+    margin-left: 91px;
+}
 /*  ABOUT RESPONSIVE  */
 #about{
     flex-direction: column;
