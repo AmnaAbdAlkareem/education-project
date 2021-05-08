@@ -292,6 +292,8 @@ body{
     border: .1rem solid rgba(0, 0, 0, .3);
     margin: 1.5rem;
     position: relative;
+    overflow: hidden;
+    transition: .5s ease;
 }
 /*html1*/
 .course .box-container .box1{
@@ -332,13 +334,29 @@ body{
     z-index: 99999;
     position: absolute;
     display: none;
-    top: 50px;
+    top: 25px;
     padding: .4rem;
 }
 .course .box-container .box:hover p{
     display: block;
     margin: 10px;
  
+}
+.course .box-container .box:hover .add-list{
+    display: block;
+    opacity: 1;
+}
+.box .add-list {
+    background-color: #c9756a;
+    border-radius: 19px;
+    margin-left: 0px;
+    z-index: 1000;
+    display: none;
+    width: 103px;
+    height: 40px;
+    margin-left: 119px;
+    margin-top: -32px;
+
 }
 .course .box-container .box:hover img{
 
@@ -355,6 +373,7 @@ body{
 }
 
 /**/
+
 .course .box-container .box .content{
     padding: 1rem;
 
@@ -368,9 +387,6 @@ body{
     color: #444;
     font-size: 1.7rem;
 
-}
-.course .box-container .box .content .title:hover{
-    text-decoration: underline;
 }
 .course .box-container .box .content .info{
     display: flex;
