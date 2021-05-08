@@ -222,3 +222,35 @@ margin-bottom: 10px;
         transform: translatey(100%);
     }
 }
+
+@media (max-width:768px){
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper .left{
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+    .wrapper .right{
+        width: 90%;
+        margin: auto;
+        
+       
+    }
+    .classes_data{
+        display: block;
+    }
+    .classes_data .data {
+        width: 97%;
+        margin-left: -133px;
+    }
+    .wrapper .right .info_data .data, .wrapper .right .info_data2 .data, .wrapper .right .classes_data .data {
+        width: 94%;
+        margin-left: -142px
+    
+    }
+    }
